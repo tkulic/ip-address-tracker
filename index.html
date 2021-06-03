@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Stylesheet -->
+        <link href="styles.css" rel="stylesheet" />
+        <title>IP Address Tracker</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>IP Address Tracker</h1>
+            <form>
+                <input
+                    type="text"
+                    placeholder="Search for any IP address or domain"
+                    aria-label="Search for any IP address or domain "
+                />
+                <button id="search-button">></button>
+            </form>
+        </header>
+
+        <main>
+            <div class="info-container">
+                <div class="info-section">
+                    <p class="info-title">IP Address</p>
+                    <p id="ip-address" class="info-content">452.355.456.231</p>
+                </div>
+                <div class="info-section">
+                    <p class="info-title">Location</p>
+                    <p id="location" class="info-content">Spalato</p>
+                </div>
+                <div class="info-section">
+                    <p class="info-title">Timezone</p>
+                    <p id="timezone" class="info-content">UTC-05:00</p>
+                </div>
+                <div class="info-section">
+                    <p class="info-title">ISP</p>
+                    <p id="isp" class="info-content">O2</p>
+                </div>
+            </div>
+
+            <div id="map" class="map"></div>
+        </main>
+
+        <script src="index.js"></script>
+    </body>
+</html>
