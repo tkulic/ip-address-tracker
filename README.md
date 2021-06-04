@@ -1,37 +1,62 @@
-# Frontend Mentor - IP address tracker
+# IP Address Tracker
 
-![Design preview for the IP address tracker coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0). Frontend Mentor challenges help you improve coding skills by building realistic projects.
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+-   [Challenge](#challenge)
+-   [Links](#links)
+-   [Technologies](#technologies)
+-   [Wokflow](#workflow)
+-   [Sources](#sources)
+-   [Screenshots](#screenshots)
+-   [Author](#author)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Challenge
 
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
-
-## The challenge
-
-Your challenge is to build out this IP Address Tracker app and get it looking as close to the design as possible. To get the IP Address locations, you'll be using the [IP Geolocation API by IPify](https://geo.ipify.org/). To generate the map, we recommend using [LeafletJS](https://leafletjs.com/).
-
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 -   View the optimal layout for each page depending on their device's screen size
 -   See hover states for all interactive elements on the page
 -   See their own IP address on the map on the initial page load
 -   Search for any IP addresses or domains and see the key information and location
 
----
+## Links
 
-⚠️ **IMPORTANT** ⚠️: To use the IP Geolocation API by IPify, you'll need to sign up for a free account. You won't need to add any cards details to do this and it's a very quick process. This will generate an API Key for you. Usually, you would be able to restrict your API Key to a specific URL (your own domain). This makes sure that other people can't use your API Key on their own websites. IPify doesn't have this feature, but because you aren't adding your card details, this isn't an issue. **So be sure to only sign up for the free account and DO NOT enter any card details**.
+-   [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/react-scss-shrtcode-api-sessionstorage-clipboard-api-wbayhjxMP)
+-   [Live website](https://tkulic.github.io/url-shorty)
+-   [GitHub repository](https://github.com/tkulic/url-shorty)
 
-For the mapping API, we recommend using [LeafletJS](https://leafletjs.com/). It's free to use and doesn't require an API Key. If you decide to use another API, like Google Maps or Mapbox, be sure to secure your API Key. Here are guides for both Google Maps and Mapbox, be sure to read through them thoroughly:
+## Technologies
 
--   [API Key best practices from Google Developers](https://developers.google.com/maps/api-key-best-practices)
--   [How to use Mapbox securely](https://docs.mapbox.com/help/troubleshooting/how-to-use-mapbox-securely/)
+-   HTML5
+-   CSS3
+-   Vanilla JavaScript
+-   IP Geolocation API - [IPWHOIS.IO](https://ipwhois.io)
+-   [Leaflet](https://leafletjs.com) library for generating interactive maps
 
-Exposing your API Key publicly can lead to other people using it to make requests for their own application if the proper precautions aren't in place. Please be sure you read the guides thoroughly and follow their recommendations.
+## Workflow
 
-**We don't take any responsibility if you expose your API Key while completing the challenge and have not secured it.**
+1. Project initialization as a public repository on GitHub
+2. Planning out HTML structure and CSS classes based on design files
+3. Writing out HMTL and preparing it for DOM interactions with JavaScript
+4. Styling the page from top to bottom by utilizing _mobile-first_ approach
+5. Adding media queries for desktop layout
+6. Integrating IP Geolocation into the script
+7. Adding the interactive map and binding it to Geolocation data
+8. Configuring repository to publish code with GitHub Pages
+
+## Sources
+
+-   [IPWHOIS.IO Docs](https://ipwhois.io/documentation#tabs-format)
+-   [Leaflet Docs](https://leafletjs.com/reference-1.7.1.html)
+
+## Screenshots
+
+![Desktop layout](./screenshots/Screenshot_desktop.png)
+![Mobile layout](./screenshots/Screenshot_mobile.png)
+
+## Author
+
+-   GitHub profile - [Toni Kulić](https://github.com/tkulic)
+-   Frontend Mentor - [@tkulic](https://www.frontendmentor.io/profile/tkulic)

@@ -35,7 +35,7 @@ body {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 /* 2. Header
@@ -58,7 +58,7 @@ h1 {
 
 form {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
@@ -68,7 +68,6 @@ input,
 button {
     font-family: inherit;
     font-size: inherit;
-    outline: none;
     border: none;
     padding: 1em;
 }
@@ -77,6 +76,12 @@ input {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     width: 85%;
+    color: var(--dark);
+}
+
+input:focus {
+    outline: none;
+    background: whitesmoke;
     color: var(--dark);
 }
 
@@ -89,13 +94,31 @@ button {
     font-weight: 700;
 }
 
+button:hover,
+button:focus {
+    outline: none;
+    cursor: pointer;
+    background: rgb(63, 63, 63);
+}
+
+.error-message {
+    color: black;
+    background: tomato;
+    font-style: italic;
+    font-size: 0.8rem;
+    padding: 0.6em 1.2em;
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0.8;
+    margin-top: 0.5em;
+    display: none;
+}
+
 /* 3. Main
 ======================================== */
 
 main {
     position: relative;
-    height: 400px;
-    background: gray;
 }
 
 .info-container {
@@ -110,9 +133,11 @@ main {
     top: -150px;
     background: white;
     border-radius: 15px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     padding: 1em;
     max-width: 1200px;
     margin: 0 auto;
+    z-index: 1000;
 }
 
 .info-title {
@@ -129,6 +154,42 @@ main {
     margin-top: 0;
 }
 
+.tooltip {
+    color: var(--dark);
+    border: 2px solid var(--dark);
+    border-radius: 5px;
+    padding: 0 1px 0 2.5px;
+    opacity: 0.8;
+    font-size: 0.6rem;
+    position: relative;
+}
+
+.tooltip-text {
+    position: absolute;
+    left: 2em;
+    top: 0.5em;
+    width: 15em;
+    visibility: hidden;
+    background: var(--dark);
+    color: #fff;
+    border-radius: 5px;
+    padding: 1em;
+    font-size: 0.5rem;
+}
+
+.tooltip:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
+
+#map {
+    height: 500px;
+}
+
 /* 4. Media queries
 ======================================== */
 
@@ -140,6 +201,7 @@ main {
         flex-direction: row;
         text-align: left;
         justify-content: space-between;
+        align-items: flex-start;
         padding: 2em 1em;
         top: -100px;
     }

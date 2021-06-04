@@ -9,12 +9,27 @@
             sizes="32x32"
             href="./images/favicon-32x32.png"
         />
+
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
             href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
             rel="stylesheet"
         />
+
+        <!-- Leaflet library -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+            integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+            crossorigin=""
+        />
+        <script
+            src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""
+        ></script>
+
         <!-- Stylesheet -->
         <link href="styles.css" rel="stylesheet" />
         <title>IP Address Tracker</title>
@@ -26,10 +41,12 @@
             <form>
                 <input
                     type="text"
-                    placeholder="Search for any IP address or domain"
-                    aria-label="Search for any IP address or domain "
+                    id="url-input"
+                    placeholder="Search for any IP address"
+                    aria-label="Search for any IP address"
                 />
                 <button id="search-button">></button>
+                <p id="error-message" class="error-message"></p>
             </form>
         </header>
 
@@ -40,8 +57,17 @@
                     <p id="ip-address" class="info-content">452.355.456.231</p>
                 </div>
                 <div class="info-section">
-                    <p class="info-title">Location</p>
-                    <p id="location" class="info-content">Spalato</p>
+                    <p class="info-title">
+                        Location
+                        <span class="tooltip">
+                            ?
+                            <span class="tooltip-text">
+                                Based on the IP Address of your computer. May
+                                vary from your actual location.
+                            </span>
+                        </span>
+                    </p>
+                    <p id="city" class="info-content">Spalato</p>
                 </div>
                 <div class="info-section">
                     <p class="info-title">Timezone</p>
@@ -53,9 +79,8 @@
                 </div>
             </div>
 
-            <div id="map" class="map"></div>
+            <div id="map"></div>
         </main>
-
         <script src="index.js"></script>
     </body>
 </html>
