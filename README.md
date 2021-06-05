@@ -23,7 +23,7 @@ Users should be able to:
 
 ## Links
 
--   [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/react-scss-shrtcode-api-sessionstorage-clipboard-api-wbayhjxMP)
+-   [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/vanilla-js-ip-geolocation-9PoanNr76)
 -   [Live website](https://tkulic.github.io/ip-address-tracker)
 -   [GitHub repository](https://github.com/tkulic/ip-address-tracker)
 
