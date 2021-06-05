@@ -1,6 +1,6 @@
 # IP Address Tracker
 
-This is a solution to the [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0). Frontend Mentor challenges help you improve coding skills by building realistic projects.
+This is a solution to the [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0). Frontend Mentor challenges help to improve coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -24,8 +24,8 @@ Users should be able to:
 ## Links
 
 -   [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/react-scss-shrtcode-api-sessionstorage-clipboard-api-wbayhjxMP)
--   [Live website](https://tkulic.github.io/url-shorty)
--   [GitHub repository](https://github.com/tkulic/url-shorty)
+-   [Live website](https://tkulic.github.io/ip-address-tracker)
+-   [GitHub repository](https://github.com/tkulic/ip-address-tracker)
 
 ## Technologies
 
@@ -54,7 +54,6 @@ Users should be able to:
 ## Screenshots
 
 ![Desktop layout](./screenshots/Screenshot_desktop.png)
-![Mobile layout](./screenshots/Screenshot_mobile.png)
 
 ## Author
 
