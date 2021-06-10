@@ -2,7 +2,7 @@ const urlInput = document.getElementById("url-input")
 const searchButton = document.getElementById("search-button")
 const errorMessage = document.getElementById("error-message")
 
-const API_BASE_URL = "http://ipwhois.app/json/"
+const API_BASE_URL = "https://ipwhois.app/json/"
 const responseFields = "?objects=ip,success,message,country,city,latitude,longitude,isp,timezone_gmt"
 
 function generateMap(latitude, longitude) {
